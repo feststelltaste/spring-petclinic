@@ -42,7 +42,7 @@
         <cobertura.version>2.7</cobertura.version>
 
         <!-- jQAssistant and asciidoctor -->
-        <jqassistant.version>1.4.0</jqassistant.version>
+        <jqassistant.version>1.5.0</jqassistant.version>
     </properties>
 
     <pluginRepositories>
@@ -441,7 +441,7 @@
                     <dependency>
                         <groupId>de.kontext-e.jqassistant.plugin</groupId>
                         <artifactId>jqassistant.plugin.git</artifactId>
-                        <version>1.4.1</version>
+                        <version>1.5.0</version>
                     </dependency>
                     <dependency>
                         <groupId>org.jqassistant.contrib.plugin</groupId>
