@@ -8,7 +8,7 @@ This chapter describes the rules related to Maven.
 
 [[maven:MainArtifact]]
 .Labels all main artifacts created by Maven modules with `Main`
-[source,cypher,role=concept]
+[source,cypher,role="concept"]
 ----
 MATCH
   (:Maven:Project)-[:CREATES]->(mainArtifact:Artifact)
@@ -19,6 +19,34 @@ SET
 RETURN
   mainArtifact as MainArtifact
 ----
+
+=== Tabs Example
+
+Labels all main artifacts created by Maven modules with `Main`
+
+
+[source,cypher,role="primary"]
+.Cypher
+----
+MATCH
+  (:Maven:Project)-[:CREATES]->(mainArtifact:Artifact)
+WHERE
+  mainArtifact.type <> "test-jar"
+SET
+  mainArtifact:Main
+RETURN
+  mainArtifact as MainArtifact
+----
+
+
+[source,role="secondary"]
+.Results
+----
+Here should the results be displayed.
+----
+
+Status: Not Available
+
 
 === Reports
 
